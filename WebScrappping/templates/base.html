@@ -1,10 +1,64 @@
 <!DOCTYPE html>
+
+{% load static %}
 <html lang="en">
     <head>
         <meta charset="utf-8">
         <title>Mr_N0_0NE's List</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" href="{% static "css/style.css" %}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     </head>
     <body>
-        <h2>totest</h2>
+    <nav>
+        <div class="container nav-wrapper">
+            <a href="/" class="brand-logo">Mr_N0_0NE's List</a>
+            <ul id="nav-mobile" class="right">
+                <li><a href="/">Home</a></li>
+            </ul>
+        </div>
+    </nav>
+   
+    <div class="container">
+
+        <h1 style="text-align: center">What do you want to search as part of this list ? </h1>
+        <div class="row">
+            <div class="col s4">
+                <!--promo content 1 goes here -->
+                <div class="center">
+                    <i class="large material-icons" style="color: #EE6E73">flash_on</i>
+                    <p>High Speed Craigslist web scrapper</p>
+                    <p class="light center">Scrape away right here in a interactive way.</p>
+
+            </div>
+        </div>
+        <div class="col s4">
+            <!--promo content 2 goes here-->
+            <div class="center">
+                <i class="large material-icons" style="color: #FF4500">nfc</i>
+                <p>Filter your searches</p>
+                <p class="light center">Built in functionality to filter based on pricing.</p>
+        </div>  
+    </div>
+    <div class="col s4">
+        <!--promo content 3 goes here -->
+        <div class="center">
+            <i class="large material-icons" style="color: #00BFFF">table_chart</i>
+            <p>Much interesting and interactive front-end</p>
+            <p class="light center">Built in a smarter way &#128373;&#127995;</p>
+
+        </div>
+    </div> 
+    </div>
+</div>
+{% block content %}
+
+
+{% endblock content %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
     </body>
 </html>
