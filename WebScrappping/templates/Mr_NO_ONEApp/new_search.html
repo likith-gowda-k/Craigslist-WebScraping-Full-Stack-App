@@ -3,5 +3,61 @@
 {% block content %}
 
 <h3 style="text-align: center">{{search | title}}</h3>
+
+    {% for post in final_postings %}
+    <p>{{post.0}}</p>
+    <p>{{post.1}}</p>
+    <p>{{post.2}}</p>
+    {% endfor %}
+
+<div class="row">
+    <div class="col s4">
+      <div class="card">
+        <div class="card-image">
+          <img src="images/sample-1.jpg">
+          <span class="card-title">Card Title</span>
+        </div>
+        <div class="card-content">
+          <p>I am a very simple card. I am good at containing small bits of information.
+          I am convenient because I require little markup to use effectively.</p>
+        </div>
+        <div class="card-action">
+          <a href="#">This is a link</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col s4">
+        <div class="card">
+          <div class="card-image">
+            <img src="images/sample-1.jpg">
+            <span class="card-title">Card Title</span>
+          </div>
+          <div class="card-content">
+            <p>I am a very simple card. I am good at containing small bits of information.
+            I am convenient because I require little markup to use effectively.</p>
+          </div>
+          <div class="card-action">
+            <a href="#">This is a link</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col s4">
+        <div class="card">
+          <div class="card-image">
+            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.I8ME9kpAl7n_5P1bbK42rAHaE7%26pid%3DApi&f=1">
+            <span class="card-title">Card Title</span>
+          </div>
+          <div class="sleep peacfully &#9829;&#9829;">
+            <p>Tachii madu putta &#9829;&#9829;</p>
+          </div>
+          <div class="card-action">
+            <a href="#">This is a link</a>
+          </div>
+        </div>
+      </div>
+  </div>
+            
     
 {% endblock content%}
